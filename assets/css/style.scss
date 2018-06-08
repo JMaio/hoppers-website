@@ -1,0 +1,25 @@
+---
+---
+body {
+  background-color: #eee;
+}
+
+.navbar-logo {
+  margin: -50%;
+  box-shadow: 0px 1px 2px 1px #ddd;
+  border-radius: 50%;
+  transition: transform 0.5s cubic-bezier(0, 1, 0.5, 1);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  
+  &:active {
+    transform: scale(1.15);
+  }
+}
+
+.nav-container {
+  margin-bottom: 5em;
+}
+
