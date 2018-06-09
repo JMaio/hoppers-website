@@ -16,6 +16,10 @@ body {
   }
 }
 
+.nav-container {
+  margin-bottom: 4em;
+}
+
 .clickable {
   // standard effect for larger items
   transition: $jwow-ease;
@@ -37,7 +41,5 @@ body {
   }
 }
 
-.nav-container {
-  margin-bottom: 5em;
 }
 
