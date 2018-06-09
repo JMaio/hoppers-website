@@ -9,6 +9,12 @@ body {
 
 .navbar-logo {
   margin: -50%;
+  &-sm {
+    position: absolute;
+    right: 20px;
+    top: -24px;
+  }
+}
 
   &:hover {
     transform: scale(1.1);
