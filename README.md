@@ -10,6 +10,7 @@ git fetch
 git pull
 ```
 (only `git pull` if there are no conflicts with your local repository!)
+
 **You are strongly suggested to have a look at the [Jekyll documentation](https://jekyllrb.com/docs/home/) and familiarise yourself with it**
 
 ## jekyll installation
