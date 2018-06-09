@@ -10,6 +10,7 @@ git fetch
 git pull
 ```
 (only `git pull` if there are no conflicts with your local repository!)
+**You are strongly suggested to have a look at the [Jekyll documentation](https://jekyllrb.com/docs/home/) and familiarise yourself with it**
 
 ## jekyll installation
 Please refer to [these instructions](https://jekyllrb.com/docs/installation/) to install Jekyll on your own machine. For reference, I (@JMaio) am running Jekyll on [Windows Subsystem for Linux (WSL)] on [Windows 10]
