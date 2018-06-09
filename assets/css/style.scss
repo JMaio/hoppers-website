@@ -16,12 +16,24 @@ body {
   }
 }
 
+.clickable {
+  // standard effect for larger items
+  transition: $jwow-ease;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
   }
-  
   &:active {
-    transform: scale(1.15);
+    transform: scale(1.05);
+  }
+  // larger effect for smaller items
+  &-sm {
+    transition: $jwow-ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(1.15);
+    }
   }
 }
 
