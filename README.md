@@ -17,4 +17,4 @@ Please refer to [these instructions](https://jekyllrb.com/docs/installation/) to
 ## running the web server
 Jekyll runs a server on your local machine that will allow the website to be viewed on your web browser by navigating to, by default, the following address:
 [localhost:4000](http://localhost:4000) (aka [127.0.0.1:4000](http://127.0.0.1:4000))
-> note the address/port on your server might be different - if they are, don't worry, jekyll should tell you on the command line how to access it
+> note the address/port on your server might be different - if they are, don't worry, jekyll should display them on the command line
