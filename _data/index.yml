@@ -1,0 +1,39 @@
+- title: Column 1
+  link: https://www.ed.ac.uk/
+  img: https://www.telegraph.co.uk/content/dam/news/2016/08/23/106598324PandawaveNEWS_trans_NvBQzQNjv4Bqeo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg
+  content:
+    - "look it's a panda"
+    - "click the card to go somewhere"
+    - "paragraph 3"
+
+- title: Column 2
+  link: https://www.edinburghzoo.org.uk/
+  img: http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/istock-511366776.jpg
+  content:
+    - "had to include a penguin right"
+    - "another link"
+    - "paragraph 3"
+  
+- title: Column 3
+  link: https://www.edinburghzoo.org.uk/
+  img: http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/istock-511366776.jpg
+  content:
+    - "had to include a penguin right"
+    - "also a link"
+    - "paragraph 3"
+  
+- title: Column 4
+  link: https://www.edinburghzoo.org.uk/
+  img: http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/istock-511366776.jpg
+  content:
+    - "had to include a penguin right"
+    - "also a link"
+    - "paragraph 3"
+
+- title: Column 5
+  link: https://www.edinburghzoo.org.uk/
+  img: http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/istock-511366776.jpg
+  content:
+    - "had to include a penguin right"
+    - "also a link"
+    - "paragraph 3"
