@@ -9,16 +9,18 @@ body {
 
 .navbar-logo {
   margin: -50%;
+  z-index: 1;
   &-sm {
     position: absolute;
     right: 20px;
-    top: -24px;
+    top: -20px;
+    z-index: 1;
   }
 }
 
-.nav-container {
-  margin-bottom: 4em;
-}
+//.nav-container {
+//  margin-bottom: 4em;
+//}
 
 .clickable {
   // standard effect for larger items
