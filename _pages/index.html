@@ -6,37 +6,28 @@ heading: Welcome to Hoppers!
 subheading: "[more text fits here]"
 ---
 
-<div class="container text-center">
-  <div class="card shadow-sm border-0 p-2 p-sm-3 mb-3 bg-light">
-    <h1 class="card-title">Welcome to Hoppers!</h1>
-    <h2 class="card-subtitle">[more text fits here]</h2>
+{% for column in site.data[page.name] %}
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 
-    <div class="card-body row">
-      {% for column in site.data[page.title] %}
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-       
-        {% capture card-content %}
-        <div class="card subcard clickable shadow-sm p-3 border-0">
-          <h3 class="card-title">{{ column.title }}</h3>
-          {% if column.img %}
-          <img class="rounded mb-3 shadow-sm" src="{{ column.img }}" width="100%"/>
-          {% endif %}
-          {% for item in column.content %}
-          <p class="card-text px-3 mb-2">{{ item }}</p>
-          {% endfor %}
-        </div>
-        {% endcapture %}
-          
-        {% if column.link %}
-          <a href="{{ column.link }}" class="nodecor">
-            {{ card-content }}
-          </a>
-        {% else %}
-          {{ card-content }}
-        {% endif %}
-        
-      </div>
-      {% endfor %}
-    </div>
+  {% capture card-content %}
+  <div class="card subcard clickable shadow-sm p-3 border-0">
+    <h3 class="card-title">{{ column.title }}</h3>
+    {% if column.img %}
+    <img class="rounded mb-3 shadow-sm" src="{{ column.img }}" width="100%"/>
+    {% endif %}
+    {% for item in column.content %}
+    <p class="card-text px-3 mb-2">{{ item }}</p>
+    {% endfor %}
   </div>
+  {% endcapture %}
+
+  {% if column.link %}
+    <a href="{{ column.link }}" class="nodecor">
+      {{ card-content }}
+    </a>
+  {% else %}
+    {{ card-content }}
+  {% endif %}
+
 </div>
+{% endfor %}
