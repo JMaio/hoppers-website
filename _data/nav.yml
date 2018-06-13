@@ -1,0 +1,13 @@
+left:
+  - text: "About Us"
+    href: about
+
+  - text: "Events"
+    href: events
+
+right:
+  - text: "Team"
+    href: team
+
+  - text: "Sponsors"
+    href: sponsors
