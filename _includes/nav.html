@@ -11,13 +11,11 @@
 <!--  main navbar content  -->
     <div class="collapse navbar-collapse justify-content-center align-items-center text-center" id="navbar">
       <ul class="nav navbar-nav row">
+        {% for item in site.data.nav.left %}
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="{{ item.href }}">{{ item.text }}</a>
         </li>
-        
-        <li class="nav-item">  
-          <a class="nav-link" href="#">Events</a>
-        </li>
+        {% endfor %}
         
         <li class="navbar-brand mx-3 p-0 d-none d-sm-block">
           <a class="nav-link" href="{{ site.baseurl }}/" style="height: 0">
@@ -25,13 +23,12 @@
           </a>
         </li>
         
+        {% for item in site.data.nav.right %}
         <li class="nav-item">
-          <a class="nav-link" href="#">Team</a>
+          <a class="nav-link" href="{{ site.baseurl }}/{{ item.href }}">{{ item.text }}</a>
         </li>
+        {% endfor %}
         
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sponsors</a>
-        </li>
       </ul>
     </div>
     <a href="{{ site.baseurl }}/" style="height: 0">
