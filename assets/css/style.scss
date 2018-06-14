@@ -28,7 +28,7 @@ body {
   transition: $jwow-ease-out;
   &:hover {
     transition: $jwow-ease;
-    transform: scale(1.04);
+    transform: scale(1.04) rotate(2deg);
   }
   &:active {
     transform: scale(1.06);
