@@ -1,8 +1,8 @@
 ---
 ---
 
-$jwow-ease: transform 1.0s cubic-bezier(0, 1, 0.5, 1);
-$jwow-ease-out: transform 1.5s cubic-bezier(0, 0, 0, 1);
+$jwow-ease: 1.0s cubic-bezier(0, 1, 0.5, 1);
+$jwow-ease-out: 1.5s cubic-bezier(0, 0, 0, 1);
 
 body {
   background-color: #eee;
@@ -25,9 +25,9 @@ body {
 
 .clickable {
   // standard effect for larger items
-  transition: $jwow-ease-out;
+  transition: transform $jwow-ease-out;
   &:hover {
-    transition: $jwow-ease;
+    transition: transform $jwow-ease;
     transform: scale(1.04) rotate(2deg);
   }
   &:active {
