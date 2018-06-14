@@ -44,6 +44,14 @@ body {
   }
 }
 
+.nav-item {
+  transition: background $jwow-ease-out;
+  &:hover {
+    transition: background $jwow-ease;
+    background-color: #eee;
+  }
+}
+
 .nodecor {
   text-decoration: none;
   &:hover {
