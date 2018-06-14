@@ -6,30 +6,33 @@ heading:
 subheading: "[more text fits here]"
 ---
 
-{% for column in site.data[page.name] %}
+{% for member in site.data[page.name] %}
+<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
 
-      <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
-       
-        {% capture card-content %}
-        <div class="card subcard clickable shadow-sm p-3 border-0">
-          <h3 class="card-title">{{ column.role }}</h3>
-          {% if column.img %}
-          <img class="rounded mb-3 shadow-sm" src="{{ column.img }}" width="100%"/>
-          {% endif %}
-          <p class="card-subtitle text-center px-0 mb-2">{{ column.name }}</p>
-        </div>
-        {% endcapture %}
-          
-        {% if column.link %}
-          <a href="{{ column.link }}" class="nodecor">
-            {{ card-content }}
-          </a>
-        {% else %}
-          {{ card-content }}
-        {% endif %}
-        
-      </div>
-      {% endfor %}
-    </div>
+  {% capture card-content %}
+  <div class="card subcard clickable shadow-sm p-3 border-0">
+    
+    {% if member.role %}
+    <h3 class="card-title">{{ member.role }}</h3>
+    {% else %}
+    <h3 class = "card-title">sup boi man</h3>
+    {% endif %}
+    
+    {% if member.img %}
+    <img class="rounded mb-3 shadow-sm" src="{{ member.img }}" width="100%"/>
+    {% endif %}
+    
+    <p class="card-subtitle text-center px-0 mb-2">{{ member.name }}</p>
   </div>
+  {% endcapture %}
+
+  {% if member.link %}
+    <a href="{{ member.link }}" class="nodecor">
+      {{ card-content }}
+    </a>
+  {% else %}
+    {{ card-content }}
+  {% endif %}
+
 </div>
+{% endfor %}
