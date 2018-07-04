@@ -28,10 +28,10 @@ body {
   transition: transform $jwow-ease-out;
   &:hover {
     transition: transform $jwow-ease;
-    transform: scale(1.04) rotate(2deg);
+    transform: scale(1.04) rotate(1deg);
   }
   &:active {
-    transform: scale(1.06);
+    transform: scale(1.06) rotate(1.5deg);
   }
   // larger effect for smaller items
   &-sm {
