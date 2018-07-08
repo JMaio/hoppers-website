@@ -6,22 +6,22 @@
     - "click the card to go somewhere"
     - "paragraph 3"
 
-- title: Column 2
-  link: https://www.edinburghzoo.org.uk/
-  img: http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/istock-511366776.jpg
-  content:
-    - "had to include a penguin right"
-    - "another link"
-    - "paragraph 3"
-  
-- title: Column 3
+- title: Attend our Events
   link: https://www.edinburghzoo.org.uk/
   img: http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/istock-511366776.jpg
   content:
     - "had to include a penguin right"
     - "also a link"
     - "paragraph 3"
-  
+
+- title: Find us on Facebook
+  link: https://www.facebook.com/groups/edinburghhoppers/
+  img: http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/istock-511366776.jpg
+  content:
+    - "Join the group for latest updates like:"
+    - "  - Upcoming events"
+    - "  - Job and Scholarship opportunities"
+
 - title: Column 4
   link: https://www.edinburghzoo.org.uk/
   img: http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/istock-511366776.jpg
@@ -37,3 +37,11 @@
     - "had to include a penguin right"
     - "also a link"
     - "paragraph 3"
+
+- title: Got any questions?
+  link: https://www.edinburghzoo.org.uk/
+  img: http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/istock-511366776.jpg
+  content:
+    - "Drop us an email at:"
+    - "edinburghhoppers@gmail.com"
+    - "and we will try our best to answer your queries"
