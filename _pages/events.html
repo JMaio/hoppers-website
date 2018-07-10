@@ -5,3 +5,13 @@ title: Events
 heading: Our Events!
 subheading: 
 ---
+
+
+{% for paragraph in site.data[page.name] %}
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+
+  <div class="card subcard clickable shadow-sm p-3 border-0">
+    <p class="card-text px-3 mb-2">{{ paragraph }}</p>
+  </div>
+</div>
+{% endfor %}
