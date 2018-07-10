@@ -19,7 +19,16 @@
       <h2 class="card-subtitle">{{ page.subheading }}</h2>
       {% endif %}
       
-      <div class="card-body row">
+      {% comment %}
+        determine alignment from page 
+      {% endcomment %}
+      {% if page.justify %}
+        {% assign justify = page.justify %}
+      {% else %}
+        {% assign justify = "around" %}
+      {% endif %}
+      
+      <div class="card-body row justify-content-{{ justify }}">
         {{ page.content }}
       </div>
       
