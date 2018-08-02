@@ -3,7 +3,7 @@ layout: page
 name: index
 title:
 heading: Welcome to Hoppers!
-subheading: 
+subheading: "[more text fits here]"
 ---
 
 {% for column in site.data[page.name] %}
@@ -13,10 +13,10 @@ subheading:
   <div class="card subcard clickable shadow-sm p-3 border-0">
     <h3 class="card-title">{{ column.title }}</h3>
     {% if column.img %}
-    <img class="rounded mb-3 shadow-sm" src="{{ column.img }}" width="100%" style="background-color: #fafafb" />
+    <img class="rounded mb-3 shadow-sm" src="{{ column.img }}" width="100%"/>
     {% endif %}
     {% for item in column.content %}
-    <p class="card-text text-center px-3 mb-2">{{ item }}</p>
+    <p class="card-text px-3 mb-2">{{ item }}</p>
     {% endfor %}
   </div>
   {% endcapture %}
