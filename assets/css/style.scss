@@ -78,3 +78,29 @@ p {
 .subcard {
   background-color: #fdfeff;
 }
+
+.card-img-top {
+  background-color: $hoppers-gray-light;
+}
+
+.card-img-sm {
+  height: 240px;
+  @media (max-width: 576px) {
+    height: 160px;
+  }
+}
+
+.card-img-md {
+  height: 300px;
+  @media (max-width: 576px) {
+    height: 200px;
+  }
+}
+
+.img-center-vert {
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
