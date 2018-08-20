@@ -3,6 +3,10 @@
 
 $jwow-ease: 1.0s cubic-bezier(0, 1, 0.5, 1);
 $jwow-ease-out: 1.5s cubic-bezier(0, 0, 0, 1);
+$hoppers-green: #3da08c;
+$hoppers-green-light: rgba(61, 160, 140, 0.2);
+$hoppers-gray-light: #f3f3f4;
+
 
 body {
   background-color: #eee;
@@ -60,7 +64,7 @@ body {
 }
 
 h1, h3 {
-  color: #3da08c;
+  color: $hoppers-green;
 }
 
 h2, p {
