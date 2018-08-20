@@ -104,3 +104,24 @@ p {
   justify-content: center;
 }
 
+.card-footer {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 0;
+    left: 0;
+    bottom: 47px;
+    height: 30px;
+    width: 100%;
+    background: $hoppers-gray-light;
+    background: -webkit-linear-gradient(bottom, rgba(243,243,244,1) 0%, rgba(243,243,244,0.6) 40%, rgba(243,243,244,0) 100%);
+    background: -o-linear-gradient(bottom, rgba(243,243,244,1) 0%, rgba(243,243,244,0.6) 40%, rgba(243,243,244,0) 100%);
+    background: linear-gradient(to top, rgba(243,243,244,1) 0%, rgba(243,243,244,0.6) 40%, rgba(243,243,244,0) 100%);
+  }
+  background: $hoppers-gray-light;
+}
+
+.text-category {
+  color: $hoppers-green;
+}
