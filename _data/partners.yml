@@ -1,0 +1,7 @@
+- name: "School of Informatics"
+  img: inf
+  col: 6
+
+- name: "RBS"
+  img: rbs
+  col: 6
