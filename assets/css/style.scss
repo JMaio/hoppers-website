@@ -125,3 +125,11 @@ p {
 .text-category {
   color: $hoppers-green;
 }
+
+.partner-row {
+  margin-bottom: 5rem;
+  @media (max-width: 576px) {
+    margin-bottom: 2rem;
+  }
+}
+
