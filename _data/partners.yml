@@ -1,7 +1,18 @@
-- name: "School of Informatics"
-  img: inf
-  col: 6
+# dash dash is equivalent to list format
 
-- name: "RBS"
-  img: rbs
-  col: 6
+- - name: "School of Informatics"
+    img: inf
+    col: 7
+
+- - name: "Amazon"
+    img: amazon
+    col: 3
+
+  - name: "RBS"
+    img: rbs
+    col: 3
+
+    
+- - name: "Skyscanner"
+    img: skyscanner
+    col: 6
