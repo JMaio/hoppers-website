@@ -84,11 +84,13 @@ p {
 }
 
 .card-img-xs {
-  height: 150px;
+  flex-shrink: 0;
+  width: 150px;
   @media (max-width: 576px) {
-    height: 100px;
+    width: 100px;
   }
   &-sq {
+    flex-shrink: 0;
     height: 150px;
     width: 150px;
     @media (max-width: 576px) {
