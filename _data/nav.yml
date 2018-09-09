@@ -1,13 +1,13 @@
 left:
-  - text: "About Us"
-    href: about
-
   - text: "Events"
     href: events
-
-right:
+  
   - text: "Team"
     href: team
 
+right:
   - text: "Partners"
     href: partners
+    
+  - text: "Contact Us"
+    href: contact
