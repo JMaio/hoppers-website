@@ -9,7 +9,7 @@ subheading: "Here's how to reach us!"
 {% assign social = site.data.social %}
 
 <div class="row justify-content-around">
-{% for page in social %}
+{% for item in social %}
   <div class="col-12 col-lg-4 my-2 my-lg-1">
     <div class="card subcard shadow-sm border-0" style="overflow: hidden">
 
@@ -24,7 +24,7 @@ subheading: "Here's how to reach us!"
       </div>
 
       <div class="card-body text-center my-auto p-1 p-md-3" style="overflow-y: hidden">
-        <h3 class="card-title" style="font-family: 'Roboto Condensed', sans-serif">{{ site. }}</h3>
+        <h3 class="card-title" style="font-family: 'Roboto Condensed', sans-serif">{{ item.name }}</h3>
       </div>
     </div>
   </div>
