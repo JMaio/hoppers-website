@@ -10,23 +10,21 @@ subheading: "Here's how to reach us!"
 
 <div class="row justify-content-around">
 {% for item in social %}
-  <div class="col-12 col-lg-4 my-2 my-lg-1">
-    <div class="card subcard shadow-sm border-0" style="overflow: hidden">
+  <div class="col-12 col-md-4 col-lg-3 my-2 my-lg-1">
+    <a href="{{ item.href }}" class="nodecor">
+      <div class="card subcard clickable shadow-sm border-0">
 
-      <div class="card-img-top img-center-vert border-0 card-img-xs">
-        <img src="
-          {%- if member.img -%}
-            {{ '/assets/img/team/' | append: member.img | relative_url }}
-          {%- else -%}
-           {{ '/assets/img/hoppers-logo.png' | relative_url }}
-          {%- endif -%}"
-         class="w-100 h-0">
-      </div>
+        {% if item.icon %}
+        <div class="card-img-top card-img-sm img-center-vert w-100">
+          <img src="{{ item.img }}" class="w-100">
+        </div>
+        {% endif %}
 
-      <div class="card-body text-center my-auto p-1 p-md-3" style="overflow-y: hidden">
-        <h3 class="card-title" style="font-family: 'Roboto Condensed', sans-serif">{{ item.name }}</h3>
+        <div class="card-body">
+          <h4 class="card-title text-center">{{ item.name }}</h3>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
 {% endfor %}
     
