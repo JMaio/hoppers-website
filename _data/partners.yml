@@ -2,17 +2,25 @@
 
 - - name: "School of Informatics"
     img: inf
-    col: 7
+    col: 6
+  
+  - name: "Google"
+    img: google
+    col: 6
 
-- - name: "Amazon"
-    img: amazon
-    col: 3
-
-  - name: "RBS"
+- - name: "RBS"
     img: rbs
-    col: 3
+    col: 4
+    
+  - name: "American Express"
+    img: amex
+    col: 4
 
     
 - - name: "Skyscanner"
     img: skyscanner
-    col: 6
+    col: 3
+  
+  - name: "Amazon"
+    img: amazon
+    col: 3
