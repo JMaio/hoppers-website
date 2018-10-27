@@ -3,6 +3,11 @@
 
 $jwow-ease: 1.0s cubic-bezier(0, 1, 0.5, 1);
 $jwow-ease-out: 1.5s cubic-bezier(0, 0, 0, 1);
+$hoppers-green: #3da08c;
+$hoppers-green-light: rgba(61, 160, 140, 0.2);
+$hoppers-gray-light: #f3f3f4;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
 
 body {
   background-color: #eee;
@@ -28,18 +33,18 @@ body {
   transition: transform $jwow-ease-out;
   &:hover {
     transition: transform $jwow-ease;
-    transform: scale(1.04) rotate(1deg);
+    transform: scale(1.01);
   }
   &:active {
-    transform: scale(1.06) rotate(1.5deg);
+    transform: scale(1.03);
   }
   // larger effect for smaller items
   &-sm {
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
     &:active {
-      transform: scale(1.15);
+      transform: scale(1.07);
     }
   }
 }
@@ -60,7 +65,7 @@ body {
 }
 
 h1, h3 {
-  color: #3da08c;
+  color: $hoppers-green;
 }
 
 h2, p {
@@ -74,3 +79,75 @@ p {
 .subcard {
   background-color: #fdfeff;
 }
+
+.card-img-top {
+  background-color: $hoppers-gray-light;
+}
+
+.card-img-xs {
+  flex-shrink: 0;
+  width: 150px;
+  @media (max-width: 576px) {
+    width: 100px;
+  }
+  &-sq {
+    flex-shrink: 0;
+    height: 150px;
+    width: 150px;
+    @media (max-width: 576px) {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
+
+.card-img-sm {
+  height: 240px;
+  @media (max-width: 576px) {
+    height: 160px;
+  }
+}
+
+.card-img-md {
+  height: 300px;
+  @media (max-width: 576px) {
+    height: 200px;
+  }
+}
+
+.img-center-vert {
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-footer {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 0;
+    left: 0;
+    bottom: 47px;
+    height: 30px;
+    width: 100%;
+    background: $hoppers-gray-light;
+    background: -webkit-linear-gradient(bottom, rgba(243,243,244,1) 0%, rgba(243,243,244,0.6) 40%, rgba(243,243,244,0) 100%);
+    background: -o-linear-gradient(bottom, rgba(243,243,244,1) 0%, rgba(243,243,244,0.6) 40%, rgba(243,243,244,0) 100%);
+    background: linear-gradient(to top, rgba(243,243,244,1) 0%, rgba(243,243,244,0.6) 40%, rgba(243,243,244,0) 100%);
+  }
+  background: $hoppers-gray-light;
+}
+
+.text-category {
+  color: $hoppers-green;
+}
+
+.partner-row {
+  margin-bottom: 5rem;
+  @media (max-width: 576px) {
+    margin-bottom: 2rem;
+  }
+}
+

@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Edinburgh Hoppers
-email: your-email@example.com
+email: edinburghhoppers@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Edinburgh Hoppers Official Website
 baseurl: "/hoppers-website" # the subpath of your site, e.g. /blog
@@ -32,6 +32,8 @@ collections:
   pages:
     output: true
     permalink: /:path
+    
+host: 0.0.0.0
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
